@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar Registration</title>
+    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" />   
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/"><img src="src/img/logo.svg" alt="logo" class="logo"></a>
+            <div class="info-btns">
+                <div class="info-btn">
+                    <img src="src/img/date.svg" alt="date">
+                    <p>28 декабря</p>
+                </div>
+                <div class="info-btn">
+                    <img src="src/img/time.svg" alt="time">
+                    <p>3,5 часа</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="desk-box">
+                <div class="webinar">
+                    <img src="src/img/web.svg" alt="svg">
+                    <span>Вебинар</span>
+                </div>
+                <h1 class="title">Front-End</h1>
+                <p class="promo"><span class="accent">с нуля</span><span>легкий старт в IT профессии</span></p>
+                <p class="description">Узнайте какими навыками должен обладать 
+                    фронтенд разработчик в 2022 году и как начать 
+                    карьеру в востребованной профессии</p>
+                
+                <div class="offers desk">
+                    <div class="gift offer">
+                        <img src="src/img/gift.png" alt="gift">
+                        <div class="offer-text">
+                            <h3>Бонус за регистрацию</h3>
+                            <p>PDF-файл "5 преимуществ профессии веб-дизайнера" </p>
+                        </div>
+                    </div>
+                    <div class="mentor offer">
+                        <img src="src/img/mentor.png" alt="mentor">
+                        <div class="offer-text">
+                            <h3>Кирилл <span class="surname">КАСАТОНОВ</span>
+                                </h3>
+                            <p>6 лет коммерческого опыта с такими  компаниями как Mercedes-Benz и другими крупными корпорациями</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="form-container right">
+                <p class="form-title">Запишитесь <span class="accent-color">бесплатно</span><br> и получите подарок</p>
+                <form id="form" class="registrationForm">
+                    <div>
+                        <input type="text" name="name" placeholder="Ваше имя и фамилия">
+                        <div id="nameErrorMessages" class="error"></div>
+                    </div>
+                    <div>
+                        <input type="tel" id="phone" name="phone" class="phone" placeholder="Ваш номер телефона">
+                        <div id="phoneErrorMessages" class="error"></div>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Ваш email">
+                        <div id="emailErrorMessages" class="error"></div>
+                    </div>
+                    <button type="submit" class="btn">Записаться бесплатно</button>
+                    <p class="disclaimer">Нажимая на кнопку, я соглашаюсь <br>с <a href="#" target="_blank">политикой конфиденциальности</a></p>
+                </form>                
+                <div id="loader" class="loader"></div>              
+            </div>
+        </div>
+
+            <div class="offers mob">
+                <div class="gift offer">
+                    <img src="src/img/gift.png" alt="gift">
+                    <div class="offer-text">
+                        <h3>Бонус за регистрацию</h3>
+                        <p>PDF-файл "5 преимуществ профессии веб-дизайнера" </p>
+                    </div>
+                </div>
+                <div class="mentor offer">
+                    <img src="src/img/mentor.png" alt="mentor">
+                    <div class="offer-text">
+                        <h3>Кирилл <span class="surname">КАСАТОНОВ</span>
+                            </h3>
+                        <p>6 лет коммерческого опыта с такими  компаниями как Mercedes-Benz и другими крупными корпорациями</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="technologies">
+            <div class="html tech">
+                <img src="src/img/html.png" alt="html">
+                <div class="decor html"></div>
+            </div>
+            <div class="css tech">
+                <img src="src/img/css.png" alt="css">
+                <div class="decor css small"></div>
+            </div>
+            <div class="js tech">
+                <img src="src/img/js.png" alt="js">
+                <div class="decor js"></div>
+            </div>
+            <div class="sublime tech">
+                <img src="src/img/sublime.png" alt="sublime">
+                <div class="decor sublime small"></div>
+            </div>
+            <div class="vs_code tech">
+                <img src="src/img/vs_code.png" alt="vs_code">
+                <div class="decor vs_code small"></div>
+            </div>
+        </div>
+
+        <div class="circle-bg">
+
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">front-end developer</p>
+    </foter>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
