@@ -79,12 +79,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         emailjs.send('service_au6eag6', 'template_n4z15yj', templateParams)
             .then(function (response) {
-                console.log("Email успешно отправлен", response.status, response.text);
-                alert('Ваши данные успешно отправлены!');
+                alert(`Ваши данные успешно отправлены!\n\nИмя и Фамилия: ${name}\nСтрана: ${country}\nТелефон: ${tel}\nEmail: ${email}`);
                 loader.style.display = 'none';
             })
             .catch(function (error) {
-                console.error("Ошибка при отправке email:", error);
                 alert('Ошибка! Данные не отправлены!');
                 loader.style.display = 'none';
             });
